@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --bg: #212121;
+    --bg2: #444444;
+    --primary: #ff0066;
+    --base-color:#fff;
+}
+
+*{
+    margin: 0;
+    color: var(--base-color);
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Roboto',sans-serif;
+}
+
+header{
+    background-color: var(--bg2);
+    display: flex;
+    padding: 1.5rem;
+}
+
+h1{
+    font-family: 'Bebas Neue',cursive;
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+nav{
+    display: flex;
+    flex: 1;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-self: center;
+}
+
+a{
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    flex: 1;
+}
+
+nav li:nth-child(3){
+    flex: 2;
+}
+
+#hero p{
+    font-family: Roboto;
+    font-size: 3rem;
+    line-height: 56px;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    height: 180px;
+    position: relative;
+}
+
+#hero::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url("../Images/poster_guerra.jpg");
+    position: absolute;
+    box-shadow: inset 0px -25px 25px #212121;
+}
+
+.poster{
+    height: 17.5rem;
+    
+}
+
+.botao{
+    background-color: var(--primary);
+    border-radius: .5rem;
+}
+
